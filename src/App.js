@@ -9,6 +9,9 @@ import About from "./Component/About/About";
 import Features from "./Component/Features/Features";
 import Explore from "./Component/explore/explore";
 import Contact from "./Component/Contact/Contact";
+import Footer from './Component/Footer/Footer';
+import Service from './Component/Service/Service'
+import Product from './Component/Product/Product'
 
 function App() {
   return (
@@ -21,8 +24,11 @@ function App() {
         <Route path="/features" element={<Features />} />
         <Route path="/explore" element={<Explore />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/service" element={<Service />} />
+        <Route path="/product" element={<Product />} />
+        
       </Routes>
-
+      <Footer/>
     </Router>
   );
 }
